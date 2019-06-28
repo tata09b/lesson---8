@@ -1,0 +1,81 @@
+body {
+  padding: 130px;
+  background: #A8EFD4;
+}
+
+.text {
+  color: #D1E510;
+  font-size: 20px;
+  padding: 50px;
+}
+
+.text:hover{
+  color: black;
+  transition: color, font-size 0.5s ease 0.5s;
+  font-size: 22px;
+  cursor: pointer;
+
+}
+
+.bigdiv {
+  text-align: center;
+  background: white;
+  padding-bottom: 100px;
+  box-shadow: 0px 40px 100px -20px rgba(0, 0, 0, 0.2);
+}
+
+
+.box1{
+  background-image: url('../image/icon.jpg');
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  transition-timing-function: ease;
+  margin-right: 20px;
+
+}
+
+.box1:hover{
+
+    background-image: url('../image/icon2.jpg');
+
+}
+
+.box2{
+  
+  background-color: #DDEF59;
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin left: 20px;
+
+}
+
+.box3{
+  height: 50px;
+  width: 50px;
+  background-color: #35871E;
+  position: absolute;
+  top: 50%;
+  left: 50%
+  -webkit-animation: mymove 5s infinite; /*safari 4.0 - 8.0*/
+  animation: mymove 5s infinite
+}
+
+@keyframes mymove {
+     0%  {top: 0px; left: 0px; background: orange;}
+    25%  {top: 0px; left: 100px; background: white;}
+    50%  {top: 100px; left: 100px; background: yellow;}
+    75%  {top: 100px; left: 0px; background: green;}
+    100% {top: 0px; left: 0px; background: orange;}
+}
